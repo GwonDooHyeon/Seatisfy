@@ -56,9 +56,10 @@
     transform: translate3d(0, 100%, 0);
   }
   
-  body {
-	  padding-top: 0PX;
-	}
+/* 헤더 높이만큼 여백부여 */
+body {
+  padding-top: 0px;
+}
 }
 </style>
     <body>

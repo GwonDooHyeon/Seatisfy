@@ -168,7 +168,10 @@ public class ReserServiceImpl implements ReserService {
 				return seatMapper.updateSeat(rdto.getSeatnum(), rdto.getPno(), true) == 1 ? true : false;			
 			}
 		} else {
-			return seatMapper.updateSeat(rdto.getSeatnum(), rdto.getPno(), false) == 1 ? true : false;
+			seatMapper.updateSeat(
+					updateSeatDTO.getSeatnum(), 
+					updateSeatDTO.getPno(), 
+					updateSeatDTO.getIsreserved());
 		}
 		return false;
 	}

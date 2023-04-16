@@ -41,26 +41,33 @@
         <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5">
     <div class="row">
-      <div class="col-lg-3 mb-4 mb-lg-0">
-        <a href="/" class="text-decoration-none">
-          <h5 class="text-primary mb-3">Logo</h5>
-        </a>
-        <p class="text-muted">Seatisfy</p>
-      </div>
-      <div class="col-lg-3 mb-4 mb-lg-0">
-        <h5 class="text-primary mb-3">Menu</h5>
+      <div class="col-sm-3 mb-4 mb-lg-0">
+      	<img src="/resources/favicon/favicon-16x16.png"/>
+        <h6 class="text-primary mb-3 d-inline"> Seatisfy</h6>
         <ul class="list-unstyled">
           <li><a href="/" class="text-muted text-decoration-none">Home</a></li>
-          <li><a href="/reserve" class="text-muted text-decoration-none">예약</a></li>
-          <li><a href="/notice" class="text-muted text-decoration-none">공지사항</a></li>
-          <li><a href="/qnas" class="text-muted text-decoration-none">자주 묻는 질문(QnA)</a></li>
         </ul>
       </div>
-      <div class="col-lg-3 mb-4 mb-lg-0">
-        <h5 class="text-primary mb-3">Support</h5>
+      <div class="col-sm-3 mb-4 mb-lg-0">
+        <h6 class="text-primary mb-3">Introduction</h6>
         <ul class="list-unstyled">
           <li><a href="/intro" class="text-muted text-decoration-none">서비스 소개</a></li>
-          <li><a href="/how" class="text-muted text-decoration-none">이용 방법</a></li>
+          <li><a href="/how" class="text-muted text-decoration-none">이용방법</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 mb-4 mb-lg-0">
+        <h6 class="text-primary mb-3">Reservation</h6>
+        <ul class="list-unstyled">
+          <li><a href="/reserve" class="text-muted text-decoration-none">예약</a></li>
+          <li><a href="/reserve/myreser" class="text-muted text-decoration-none">내 예약 좌석 보기</a></li>
+          <li><a href="/reserve/mypost" class="text-muted text-decoration-none">내 예약 게시글 보기</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 mb-4 mb-lg-0">
+        <h6 class="text-primary mb-3">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="/notice" class="text-muted text-decoration-none">공지사항</a></li>
+          <li><a href="/qnas" class="text-muted text-decoration-none">자주 묻는 질문(QnA)</a></li>
         </ul>
       </div>
       <!-- <div class="col-lg-3">

@@ -206,8 +206,9 @@ public class ReserController {
 //			} 
 			else {
 				reserDTO.setEmail(principal.getName());
-				reserService.reserveSeat(reserDTO);			// 예약 실행
-				redirectAttributes.addAttribute("result", "success");
+				boolean result = reserService.reserveSeat(reserDTO);			// 예약 실행
+				String msg = result ? "success" : "reserved";
+				redirectAttributes.addAttribute("result", msg);
 			}
 		}
 		redirectAttributes.addAttribute(reserService.getSeatsByPost(pno));

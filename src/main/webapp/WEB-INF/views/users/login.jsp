@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <%@include file="../include/header.jsp" %>
+<style>
+body {
+  padding-top: 150px;
+}
+</style>
 <body class="text-center">
 <%@include file="../include/navbar.jsp" %>
 

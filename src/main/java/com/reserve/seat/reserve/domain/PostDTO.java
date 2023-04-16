@@ -26,13 +26,13 @@ public class PostDTO {
 	
 	private String pwriter;
 	
-	@NotBlank(message = "제목을 비워둘 순 업습니다")
+	@NotBlank(message = "제목을 비워둘 순 없습니다")
 	private String ptitle;
-	@NotBlank(message = "내용을 비워둘 순 업습니다")
+	@NotBlank(message = "내용을 비워둘 순 없습니다")
 	private String pcontent;
-	@NotBlank(message = "장소를 비워둘 순 업습니다")
+	@NotBlank(message = "장소를 비워둘 순 없습니다")
 	private String place;
-	@NotBlank(message = "주소를 비워둘 순 업습니다")
+	@NotBlank(message = "주소를 비워둘 순 없습니다")
 	private String address;
 	
 	@SeatInfo

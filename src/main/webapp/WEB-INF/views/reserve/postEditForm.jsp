@@ -103,7 +103,19 @@
 				<form:form action="/reserve/edit/${ post.pno }" method="post" modelAttribute="postDTO" id="postFrm">
 					<input type="hidden" name="${ _csrf.parameterName }" value="${ _csrf.token }"/>
 					<fieldset class="border p-2 rounded mb-5">
-	    				<legend>장소 정보</legend>
+	    				<legend><strong>게시글 작성</strong></legend>
+						<label for="ptitle" class="form-label">제목</label>
+						<form:input path="ptitle" id="ptitle" class="form-control rounded" value="${ post.ptitle }"/>
+						<div><form:errors path="ptitle" cssStyle="color:red;"/></div>
+						
+						<label for="summernote" class="form-label">내용</label>
+						<form:textarea path="pcontent" id="summernote"/><br>
+						<div><form:errors path="pcontent" cssStyle="color:red;"/><br></div>
+						<form:hidden path="pwriter" value="작성자"/>
+					</fieldset>
+					<fieldset class="border p-2 rounded mb-5">
+	    				<legend><strong>장소 정보</strong></legend>
+	    				<div><div class="badge bg-success">검색을 통한 입력 권장</div></div>
 						<div class="map_wrap mt-3">
 						    <div class="rounded" id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
 						
@@ -133,7 +145,7 @@
 						<div><form:errors path="address" cssStyle="color:red;"/></div>
 					</fieldset>
 					<fieldset class="border p-2 rounded mb-5">
-	    				<legend>예약 정보</legend>
+	    				<legend><strong>예약 정보</strong></legend>
 	    				<div><div class="badge bg-danger">(등록 후 수정 불가)</div></div>
 						<label for="seatX" class="form-label mt-3">자리 배치 정보</label>
 						<div class="mb-3">
@@ -154,17 +166,6 @@
 						<form:input id="edate" path="enddate" type="datetime-local" class="form-control rounded" value="${ post.enddate }"/>
 						<div><form:errors path="enddate" cssStyle="color:red;"/></div>
 					</fieldset>
-					<fieldset class="border p-2 rounded mb-5">
-	    				<legend>게시글 작성</legend>
-						<label for="ptitle" class="form-label">제목</label>
-						<form:input path="ptitle" id="ptitle" class="form-control rounded" value="${ post.ptitle }"/>
-						<div><form:errors path="ptitle" cssStyle="color:red;"/></div>
-						
-						<label for="summernote" class="form-label">내용</label>
-						<form:textarea path="pcontent" id="summernote"/><br>
-						<div><form:errors path="pcontent" cssStyle="color:red;"/><br></div>
-						<form:hidden path="pwriter" value="작성자"/>
-					</fieldset>
 					<div class="row">
 						<div class="col-12 text-end">
 							<button class="btn btn-sm btn-outline-success" type="button" id="submitBtn">전송</button>
@@ -176,7 +177,7 @@
 	</div>
 </div>
 <%@include file="../include/footer.jsp"%>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8b383d5cd72a2f6c17df1bc2be653f54&libraries=services"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=앱키&libraries=services"></script>
 <script>
 // 마커를 담을 배열입니다
 var markers = [];

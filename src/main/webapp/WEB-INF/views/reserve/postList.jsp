@@ -16,7 +16,7 @@
 	</div>
 </header>
 <div class="container">
-	<div class="container mt-5">
+	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-3 d-none d-lg-block">
 				<%@ include file="../include/sidebar_reser.jsp"%>
@@ -24,15 +24,15 @@
 			
 			<div class="col-lg-9">
 				<div class="row">
-					<div class="col-3 text-muted">
-						<select class="form-select form-select-sm w-50 d-inline"
-							id="selectAmount">
+					<div class="col-6 text-muted">
+						<select class="form-select form-select-sm d-inline"
+							id="selectAmount" style="width: 80px">
 							<option value="10" selected>6</option>
 							<option value="20">12</option>
 							<option value="40">24</option>
 						</select> <span class="d-inline">개씩 보기</span>
 					</div>
-					<div class="col-9 text-end">
+					<div class="col-6 text-end">
 					<sec:authorize access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')">
 						<a href="/reserve/add" class="btn btn-sm btn-outline-success">예약 등록 </a>
 					</sec:authorize>
@@ -71,12 +71,12 @@
 				<div class="row text-center" id="none"></div>
 				<hr class="my-4">
 				<div class="row">
-					<div class="col-8">
+					<div class="col-md-8">
 						<ul class="pagination justify-content-center" id="pagination">
 
 						</ul>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4">
 						<div class="d-flex text-end">
 							<select class="form-select" id="selectType">
 								<option value="T" selected>제목</option>
@@ -144,6 +144,8 @@ onload = function() {
 			var noneStr = '';
 			noneStr ='<div>등록된 게시물이 없습니다.<div>';
 			$("#none").html(noneStr);
+		} else {
+			$("#none").html('');
 		}
 		var imgHTML = '';
 		for (var i = 0; i < data.length; i++) {
@@ -170,7 +172,7 @@ onload = function() {
        	      formatRegDate = regDate.getFullYear() + '-' + ('0' + (regDate.getMonth() + 1)).slice(-2) + '-' + ('0' + regDate.getDate()).slice(-2);
        	    }
        	 imgHTML += ''
-		       	+ '<div class="card col-4" >'
+		       	+ '<div class="card col-md-4 col-sm-12" >'
 		       	+ '<div  class="card-header text-of"><strong>'+data[i].ptitle+'</strong></div><div class="row mx-3">'
 		       	+ '<div class="col-6 text-of" style="color: '+statusColor+';">'+status+'</div><div class="col-6 text-end"><i class="bi bi-alarm"></i>'
 		       	+ '</div></div><a href="/reserve/detail/'+ data[i].pno + '"><div  class="card-body">'

@@ -22,15 +22,15 @@
 			</div>
 			<div class="col-lg-9">
 				<div class="row">
-					<div class="col-3 text-muted">
-						<select class="form-select form-select-sm w-50 d-inline"
-							id="selectAmount">
+					<div class="col-6 text-muted">
+						<select class="form-select form-select-sm d-inline"
+							id="selectAmount" style="width: 80px">
 							<option value="10" selected>10</option>
 							<option value="20">20</option>
 							<option value="40">40</option>
 						</select> <span class="d-inline">개씩 보기</span>
 					</div>
-					<div class="col-9 text-end">
+					<div class="col-6 text-end">
 					<a href="/reserve/add" class="btn btn-sm btn-outline-success">예약 등록 </a>
 					</div>
 				</div>
@@ -63,12 +63,12 @@
 				
 				<hr class="my-4">
 				<div class="row">
-					<div class="col-8">
+					<div class="col-md-8">
 						<ul class="pagination justify-content-center" id="pagination">
 
 						</ul>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4">
 						<div class="d-flex text-end">
 							<select class="form-select" id="selectType">
 								<option value="T" selected>제목</option>
