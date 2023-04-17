@@ -9,3 +9,5 @@
 
 - 좌석을 예약할 수 있는 스프링 파이널 프로젝트입니다.
 
+![image](https://user-images.githubusercontent.com/122503466/232462721-10e22d49-f002-4487-a82b-b0862b7eab0d.png)
+
