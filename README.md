@@ -12,3 +12,14 @@
 
 ![image](https://user-images.githubusercontent.com/122503466/232462721-10e22d49-f002-4487-a82b-b0862b7eab0d.png)
 
+<br>
+
+## 🛠 사용 기술 및 라이브러리
+
+- Java, Spring, JavaScript
+- AJAX
+- BootStrap
+- MySQL, MyBatis
+- Google API(메일)
+- Kakao Map API (지도)
+
